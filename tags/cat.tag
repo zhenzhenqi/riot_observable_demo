@@ -19,6 +19,7 @@
 			observable.trigger('woof', catMsg, alphabet[randomAlpha]);
 		}
 
+		/* step 3, on receiving trigger receive data, perform action */
 		observable.on('meow', function(passedData, someNum){
 		  that.data = passedData;
 			that.magicNum = someNum;

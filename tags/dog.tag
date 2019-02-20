@@ -14,6 +14,7 @@
 		talkToCat(event) {
 			var randomNum = Math.floor(Math.random()*1000);
 			var dogMsg = "Howling at the moon together would be purrrrfect. ~From Dog";
+			/* step 2, trigger some action, and pass parameters */
 			observable.trigger('meow', dogMsg, randomNum);
 		}
 
